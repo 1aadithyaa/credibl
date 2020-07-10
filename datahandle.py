@@ -10,7 +10,7 @@ from requests import get
 from nltk.corpus import stopwords
 import string
 
-
+# warnings
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module='bs4')
 
