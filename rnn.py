@@ -64,7 +64,7 @@ num_words = min(len(word_index), NUM_WORDS)
 embs_matrix = np.random.normal(embs_mean, embs_std, (num_words, embs_size))
 
 
-# create rnn
+# creates an rnn
 model = Sequential()
 model.add(Embedding(input_dim=NUM_WORDS, output_dim=embs_size, input_length=MAX_LEN, trainable=False, weights = [embs_matrix]))
 model.add(LSTM(units = 64, return_sequences=True, recurrent_dropout=0.25, dropout=0.25))
