@@ -1,2 +1,2 @@
 # credibl
-A fake news detection app
+A fake news detection app.
